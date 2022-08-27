@@ -1,3 +1,5 @@
+# Морской бой
+
 from random import randint
 
 
