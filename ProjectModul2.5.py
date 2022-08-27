@@ -189,19 +189,6 @@ class User(Player):
 
             return Dot(x - 1, y - 1)
 
-
-def greet():
-    print("-------------------")
-    print("  Приветсвуем вас  ")
-    print("      в игре       ")
-    print("    морской бой,   ")
-    print("      Адмирал      ")
-    print("-------------------")
-    print(" формат ввода: x y ")
-    print(" x - номер строки  ")
-    print(" y - номер столбца ")
-
-
 class Game:
     def __init__(self, size=6):
         self.size = size
@@ -236,15 +223,16 @@ class Game:
             board = self.try_board()
         return board
 
-    def greet(self):
-        print("-------------------")
-        print("  Приветсвуем вас  ")
-        print("      в игре       ")
-        print("    морской бой    ")
-        print("-------------------")
-        print(" формат ввода: x y ")
-        print(" x - номер строки  ")
-        print(" y - номер столбца ")
+    def greet():
+    print("-------------------")
+    print("  Приветсвуем вас  ")
+    print("      в игре       ")
+    print("    морской бой,   ")
+    print("      Адмирал      ")
+    print("-------------------")
+    print(" формат ввода: x y ")
+    print(" x - номер строки  ")
+    print(" y - номер столбца ")
 
     def loop(self):
         num = 0
@@ -278,9 +266,8 @@ class Game:
             num += 1
 
     def start(self):
-        greet()
+        self.greet()
         self.loop()
-
-
+        
 g = Game()
 g.start()
